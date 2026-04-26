@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Signup</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="icon" href="EchoSanctuary Logo Design.png">
+</head>
+
+<body>
+
+  <!-- NAVBAR (same as your other pages) -->
+  <div id="nav">
+    <img src="EchoSanctuary Logo Design.png" alt="" id="logo"> 
+    <h2 id="name">EchoSanctuary</h2>
+    <h5 class="bar" id="bar1"><a href="index.html" id="link">Home</a></h5>
+    <h5 class="bar" id="bar2-3"><a href="signi.html" id="link">Significance</a></h5>
+    <h5 class="bar" id="bar2-3"><a href="voice.html" id="link">Voice</a></h5>
+    <h5 class="bar" id="bar2-3"><a href="about.html" id="link">About us</a></h5>
+  </div>
+
+  <div id="filler"></div>
+
+  <!-- SIGNUP FORM -->
+  <div id="signup-container">
+
+    <h2 style="text-align:center; color:#2b6c2b;">Join EchoSanctuary</h2>
+
+    <form onsubmit="return validateForm()">
+
+      <!-- FULL NAME -->
+      <label>Full Name:</label>
+      <input type="text" id="fullname">
+      <span id="nameError"></span>
+
+      <!-- BIRTHDATE -->
+      <label>Birthdate:</label>
+      <input type="date" id="birthdate">
+      <span id="birthError"></span>
+
+      <!-- SEX -->
+      <label>Sex:</label><br>
+      <input type="radio" name="sex"> Male
+      <input type="radio" name="sex"> Female
+      <span id="sexError"></span>
+
+      <!-- EMAIL -->
+      <br><label>Email:</label>
+      <input type="email" id="email">
+      <span id="emailError"></span>
+
+      <!-- USERNAME -->
+      <label>Username:</label>
+      <input type="text" id="username">
+      <span id="userError"></span>
+
+      <!-- PASSWORD -->
+      <label>Password:</label>
+      <input type="password" id="password">
+      <span id="passError"></span>
+
+      <!-- CONFIRM PASSWORD -->
+      <label>Confirm Password:</label>
+      <input type="password" id="confirm">
+      <span id="confirmError"></span>
+
+      <!-- DROPDOWN -->
+      <label>How do you express yourself?</label>
+      <select id="expression">
+        <option value="">-- choose --</option>
+        <option>Writing</option>
+        <option>Art</option>
+        <option>Music</option>
+      </select>
+      <span id="selectError"></span>
+
+      <!-- CHECKBOX -->
+      <label>What do you struggle with?</label><br>
+      <input type="checkbox" name="struggle"> Anxiety<br>
+      <input type="checkbox" name="struggle"> Family Issues<br>
+      <input type="checkbox" name="struggle"> Self-esteem<br>
+      <span id="checkError"></span>
+
+      <!-- THIRD QUESTION -->
+      <label>Do you feel heard?</label><br>
+      <input type="radio" name="heard"> Yes
+      <input type="radio" name="heard"> No
+      <span id="heardError"></span>
+
+      <br><br>
+      <button type="submit">Join EchoSanctuary</button>
+
+      <p id="successMessage"></p>
+
+      <p style="text-align:center;">
+        <a href="index.html">Back to Home</a>
+      </p>
+
+    </form>
+  </div>
+
+  <script src="script.js"></script>
+
+</body>
+</html>
