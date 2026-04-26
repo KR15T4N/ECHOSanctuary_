@@ -100,7 +100,12 @@ function validateForm() {
   }
 
   if (isValid) {
-    document.getElementById("successMessage").innerHTML = "Welcome to EchoSanctuary!";
+  document.getElementById("successMessage").innerHTML = "Welcome to EchoSanctuary!";
+
+  // redirect after short delay (so user sees message)
+  setTimeout(function() {
+    window.location.href = "home.html";
+  }, 1500);
   }
 
   return isValid;
