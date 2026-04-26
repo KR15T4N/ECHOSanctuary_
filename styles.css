@@ -469,3 +469,66 @@ table { margin: auto; margin-top: -350px; }
 .about-box:last-child {
   border-color: #66bb6a;
 }
+
+/* SIGNUP PAGE */
+
+#signup-container {
+  width: 50%;
+  margin: 40px auto;
+  background-color: white;
+  padding: 25px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  box-shadow: 0px 3px 10px rgba(0,0,0,0.1);
+}
+
+#signup-container label {
+  font-weight: bold;
+  color: #2b6c2b;
+}
+
+#signup-container input,
+#signup-container select {
+  width: 95%;
+  padding: 8px;
+  margin-top: 5px;
+  margin-bottom: 10px;
+  border: 1px solid #aaa;
+  border-radius: 5px;
+}
+
+#signup-container input:focus,
+#signup-container select:focus {
+  outline: none;
+  border-color: #43a047;
+}
+
+#signup-container input[type="radio"],
+#signup-container input[type="checkbox"] {
+  width: auto;
+}
+
+span {
+  color: red;
+  font-size: 12px;
+}
+
+#successMessage {
+  color: green;
+  text-align: center;
+  font-weight: bold;
+}
+
+#signup-container button {
+  width: 100%;
+  padding: 10px;
+  background-color: #43a047;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+#signup-container button:hover {
+  background-color: #2b6c2b;
+}
